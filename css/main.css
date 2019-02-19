@@ -1,0 +1,90 @@
+/* Стили для всей страницы */
+body {
+  width: 1024px;
+  height: 768px;
+  margin: 0 auto;
+
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  color: #3B3D43;
+
+  background-color: #FFF;
+}
+
+/*  
+ *  -----------------------
+ *  Начало стилей для формы
+ *  -----------------------  
+ */
+
+/* Общие стили для формы */
+.contact-inform {
+  width: 481px;
+  margin: 31px auto;
+  
+  background-color: #F7F5F9;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Удаление рамки у группы элементов формы */
+.ask-question {
+  border: 0;
+}
+
+/* Выставление размер элементом и их позиционирование */
+.ask-question__title,
+.ask-question__input,
+.contact-inform__button {
+  width: 387px;
+  margin: 25px 0 0 27px;
+  padding: 14px 0;
+
+  line-height: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Стили для легенды группы элементов*/
+.ask-question__title {
+  margin-top: 21px;
+  padding-bottom: 0;
+
+  font-weight: bold;
+  font-size: 24px;
+  color: #3B3D43;
+}
+
+/* Стили для текстовых полей */
+.ask-question__input {
+  padding-left: 14px;
+
+  border: 0;
+  border-radius: 6px;
+  box-shadow: 0px 7px 64px rgba(0, 0, 0, 0.07);
+}
+
+/* Стили для невалидного окна */
+.ask-question__input:invalid:not(:placeholder-shown)  {
+  background-color: #ff8080;
+}
+
+/* Стили для валидного окна */
+.ask-question__input:valid:not(:placeholder-shown)  {
+  background-color: #80c080;
+}
+
+/* Стили для кнопок */
+.contact-inform__button {
+  width: 401px;
+  margin: 15px 0 40px 40px;
+  padding: 13px 0;
+
+  font-size: 17px;
+  line-height: 22px;
+  font-family: "Roboto", sans-serif;
+  color: #FFFFFF;
+
+  background-color: #6979F8;
+  border: 0;
+  border-radius: 6px;
+}

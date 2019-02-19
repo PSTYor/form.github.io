@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Раздел формы - Блок -->
+  <form class="contact-inform" action="#">
+    <!-- Подраздел "задать вопрос" - Блок -->
+    <fieldset class="ask-question">
+      <h1 class="ask-question__title">Задать вопрос</h1>
+      <input class="ask-question__input" type="text" name="full-name-user" placeholder="Фамилия Имя Отчество *" minlength="15" maxlength="30" title="Пример: Иванов Иван Иванович" pattern="[А-Я]{1}[а-я]{1,9}\s[А-Я]{1}[а-я]{1,9}\s[А-Я]{1}[а-я]{1,9}" required>
+      <input class="ask-question__input" type="tel" name="phone-number-user" placeholder="Телефон *" minlength="11" maxlength="11" title="Пример: 80123456789" pattern="[0-9]{11}" required>
+      <input class="ask-question__input" type="email" name="email-user" placeholder="Email" minlength="7" maxlength="30" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{3,5}$" required>
+    </fieldset>
+    <!-- Общая кнопка для всей формы - Элемент -->
+    <button class="contact-inform__button" type="submit">Отправить запрос</button>
+  </form>
+</body>
+</html>
